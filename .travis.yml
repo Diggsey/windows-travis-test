@@ -6,5 +6,5 @@ script:
   - docker version
   - docker images
   - docker info
-  - & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchLinuxEngine
+  - "& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchLinuxEngine"
   - docker run hello-world
