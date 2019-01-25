@@ -1,0 +1,9 @@
+os: windows
+language: bash
+services: docker
+
+script:
+  - docker version
+  - docker images
+  - docker info
+  
