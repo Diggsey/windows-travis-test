@@ -5,6 +5,6 @@ services: docker
 script:
   - wmic cpu get VirtualizationFirmwareEnabled
   - choco install minikube
-  - minikube start --vm-driver=hyperv --hyperv-virtual-switch="Primary Virtual Switch"
+  - minikube start --vm-driver=hyperv
   - minikube ip
   - minikube ssh "pwd"
