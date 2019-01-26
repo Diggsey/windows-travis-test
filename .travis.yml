@@ -5,6 +5,8 @@ services: docker
 script:
   - wmic cpu get VirtualizationFirmwareEnabled
   - choco install minikube
+  - choco install virtualbox
+  - docker-machine create --virtualbox-no-vtx-check --driver virtualbox minikube
   - minikube start --vm-driver=hyperv
   - minikube ip
   - minikube ssh "pwd"
