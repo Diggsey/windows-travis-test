@@ -3,15 +3,5 @@ language: bash
 services: docker
 
 script:
-  - docker version
-  - docker images
-  - docker info
-  - echo "$PROGRAMFILES"
-  - ls "$PROGRAMFILES"
-  - ls "$PROGRAMFILES\\Docker"
-  - ls "$PROGRAMFILES/Docker"
-  - ls "$PROGRAMFILES\\Docker\\Docker"
-  - '"$PROGRAMFILES\\Docker\\Docker\\DockerCli.exe" -Version'
-  - '"$PROGRAMFILES\\Docker\\Docker\\DockerCli.exe" -SharedDrives'
-  - '"$PROGRAMFILES\\Docker\\Docker\\DockerCli.exe" -SwitchLinuxEngine'
-  - docker run hello-world
+  - choco install docker-desktop
+  - choco install minikube
