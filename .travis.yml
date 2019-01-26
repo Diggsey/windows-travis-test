@@ -8,9 +8,10 @@ script:
   - docker info
   - echo "$PROGRAMFILES"
   - ls "$PROGRAMFILES"
-  - ls "C:\\Program Files"
-  - ls "C:\\Program Files (x86)"
-  - '"$PROGRAMFILES/Docker/Docker/DockerCli.exe" -Version'
-  - '"/c/Program Files/Docker/Docker/DockerCli.exe" -SharedDrives'
-  - '"/c/Program Files/Docker/Docker/DockerCli.exe" -SwitchLinuxEngine'
+  - ls "$PROGRAMFILES\\Docker"
+  - ls "$PROGRAMFILES/Docker"
+  - ls "$PROGRAMFILES\\Docker\\Docker"
+  - '"$PROGRAMFILES\\Docker\\Docker\\DockerCli.exe" -Version'
+  - '"$PROGRAMFILES\\Docker\\Docker\\DockerCli.exe" -SharedDrives'
+  - '"$PROGRAMFILES\\Docker\\Docker\\DockerCli.exe" -SwitchLinuxEngine'
   - docker run hello-world
