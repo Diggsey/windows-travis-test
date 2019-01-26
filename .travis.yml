@@ -3,6 +3,7 @@ language: bash
 services: docker
 
 script:
+  - wmic cpu get VirtualizationFirmwareEnabled
   - choco install minikube
   - choco install virtualbox
   - minikube start
