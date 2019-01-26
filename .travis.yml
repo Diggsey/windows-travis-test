@@ -4,6 +4,7 @@ services: docker
 
 script:
   - choco install minikube
+  - choco install virtualbox
   - minikube start
   - minikube ip
   - minikube ssh "pwd"
