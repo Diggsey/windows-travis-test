@@ -3,5 +3,7 @@ language: bash
 services: docker
 
 script:
-  - choco install docker-desktop
   - choco install minikube
+  - minikube start
+  - minikube ip
+  - minikube ssh "pwd"
